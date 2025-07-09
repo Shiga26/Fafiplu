@@ -1,0 +1,107 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//QuantumTrader//FullDayTrade//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Quantum Full-Day Trading Calendar
+X-WR-TIMEZONE:Asia/Riyadh
+BEGIN:VTIMEZONE
+TZID:Asia/Riyadh
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:AST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:daytrade-0@quantumtrader
+SUMMARY:🟡 Pre-Market Infra Setup
+DTSTART;TZID=Asia/Riyadh:20250710T080000
+DTEND;TZID=Asia/Riyadh:20250710T083000
+DESCRIPTION:- Launch TradingView, Binance, CoinGlass\\n- Check CryptoPanic https://cryptopanic.com & Glassnode alerts https://glassnode.com\\n- Review economic events: CoinMarketCal https://coinmarketcal.com
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:INFRASTRUCTURE
+END:VEVENT
+BEGIN:VEVENT
+UID:daytrade-1@quantumtrader
+SUMMARY:🟡 Market Context + Fundamentals
+DTSTART;TZID=Asia/Riyadh:20250710T083000
+DTEND;TZID=Asia/Riyadh:20250710T090000
+DESCRIPTION:- BTC/ETH Dominance (CoinGecko https://www.coingecko.com)\\n- Fear & Greed Index: https://alternative.me/crypto/fear-and-greed-index\\n- Check Sector Narratives: LunarCrush https://lunarcrush.com
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:FUNDAMENTAL_FILTERS
+END:VEVENT
+BEGIN:VEVENT
+UID:daytrade-2@quantumtrader
+SUMMARY:🟡 Flow & Sentiment Pulse
+DTSTART;TZID=Asia/Riyadh:20250710T090000
+DTEND;TZID=Asia/Riyadh:20250710T093000
+DESCRIPTION:- CoinGlass OI & Liquidations Map https://www.coinglass.com\\n- TradingLite Volume Walls https://tradinglite.com\\n- Social Trend Spike: LunarCrush
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:SENTIMENT
+END:VEVENT
+BEGIN:VEVENT
+UID:daytrade-3@quantumtrader
+SUMMARY:🟢 Coin Selection Matrix
+DTSTART;TZID=Asia/Riyadh:20250710T093000
+DTEND;TZID=Asia/Riyadh:20250710T103000
+DESCRIPTION:- DEX Screener RVOL https://dexscreener.com\\n- TokenUnlocks https://tokenunlocks.app & CryptoRank https://cryptorank.io\\n- Build Tiers in Google Sheets
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:COIN_SELECTION
+END:VEVENT
+BEGIN:VEVENT
+UID:daytrade-4@quantumtrader
+SUMMARY:🔵 Technical Setup Scan
+DTSTART;TZID=Asia/Riyadh:20250710T103000
+DTEND;TZID=Asia/Riyadh:20250710T120000
+DESCRIPTION:- HTF + Intraday structure (BOS/CHoCH)\\n- VWAP Test: TradingView + TradingLite\\n- Setup alerts: FVG, imbalance clusters
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:TECHNICALS
+END:VEVENT
+BEGIN:VEVENT
+UID:daytrade-5@quantumtrader
+SUMMARY:🔴 Morning Trade Execution
+DTSTART;TZID=Asia/Riyadh:20250710T120000
+DTEND;TZID=Asia/Riyadh:20250710T140000
+DESCRIPTION:- Trade 1 setup from matrix\\n- FVG + VWAP entry trigger\\n- Risk Mgmt: SL, TP targets, max 2% per trade
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:EXECUTION
+END:VEVENT
+BEGIN:VEVENT
+UID:daytrade-6@quantumtrader
+SUMMARY:⚪ Post-Morning Review
+DTSTART;TZID=Asia/Riyadh:20250710T140000
+DTEND;TZID=Asia/Riyadh:20250710T143000
+DESCRIPTION:- Log trade in Notion https://notion.so\\n- Update screenshots\\n- Note lessons learned
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:POSTTRADE
+END:VEVENT
+BEGIN:VEVENT
+UID:daytrade-7@quantumtrader
+SUMMARY:🔵 Afternoon Setup Scan
+DTSTART;TZID=Asia/Riyadh:20250710T150000
+DTEND;TZID=Asia/Riyadh:20250710T160000
+DESCRIPTION:- Reload metrics: CoinGlass, TradingView\\n- Refine VWAP + FVG watch\\n- Re-alert key levels
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:TECHNICALS
+END:VEVENT
+BEGIN:VEVENT
+UID:daytrade-8@quantumtrader
+SUMMARY:🔴 Afternoon Trade Execution
+DTSTART;TZID=Asia/Riyadh:20250710T160000
+DTEND;TZID=Asia/Riyadh:20250710T180000
+DESCRIPTION:- Trade 1 more setup max\\n- Watch delta divergence and absorption zones
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:EXECUTION
+END:VEVENT
+BEGIN:VEVENT
+UID:daytrade-9@quantumtrader
+SUMMARY:⚪ Day Review & Wrap-Up
+DTSTART;TZID=Asia/Riyadh:20250710T200000
+DTEND;TZID=Asia/Riyadh:20250710T210000
+DESCRIPTION:- Final trade log in Notion\\n- Update PnL/Win Rate in Google Sheets\\n- Highlight strategy adjustments
+RRULE:FREQ=WEEKLY;BYDAY=MON,WED,FRI
+CATEGORIES:POSTTRADE
+END:VEVENT
+END:VCALENDAR
